@@ -1,17 +1,53 @@
-import axios from 'axios';
-
-const API = axios.create({
-  baseURL: 'http://localhost:5000/api/settings',
-});
-
+// API service functions for settings
 export const settingsService = {
-  getSettings: async () => {
-    const res = await API.get('/me');
-    return res.data;
+  // Account settings
+  updateProfile: async (profileData) => {
+    // Implementation for updating profile
+    return await fetch('/api/settings/profile', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(profileData),
+    });
   },
 
-  updateSettings: async (data) => {
-    const res = await API.put('/update', data);
-    return res.data;
+  changePassword: async (passwordData) => {
+    // Implementation for changing password
+    return await fetch('/api/settings/password', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(passwordData),
+    });
+  },
+
+  // Appearance settings
+  updateTheme: async (theme) => {
+    // Implementation for updating theme
+    return await fetch('/api/settings/theme', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ theme }),
+    });
+  },
+
+  // API Key management
+  generateApiKey: async (keyName) => {
+    // Implementation for generating API key
+    return await fetch('/api/settings/api-keys', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: keyName }),
+    });
+  },
+
+  deleteApiKey: async (keyId) => {
+    // Implementation for deleting API key
+    return await fetch(`/api/settings/api-keys/${keyId}`, {
+      method: 'DELETE',
+    });
+  },
+
+  getApiKeys: async () => {
+    // Implementation for getting API keys
+    return await fetch('/api/settings/api-keys');
   },
 };

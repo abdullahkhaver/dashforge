@@ -1,24 +1,24 @@
 
-# 🚀 DashForge – Modular MERN Dashboard Starter
+# DashForge – Modular MERN Dashboard Starter
 
 DashForge is a **powerful modular dashboard boilerplate** built using the MERN stack.
 It allows you to build dashboards, admin panels, SaaS systems, and internal tools — **with plugins** that you can enable/disable easily.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔐 Modular Authentication System
-- 🧩 Plugin Architecture (Blog, Notes, Products, Chat…)
-- 🎨 Beautiful React + Tailwind UI
-- 🧱 Reusable Layouts (Sidebar + Topbar + Settings Page)
-- ⭐ Fully Scalable Structure
-- 🗂 Auto-loaded backend routes
-- 🧰 Built-in Settings Panel (Account / Appearance / Developer)
+- Modular Authentication System
+- Plugin Architecture (Blog, Notes, Products, Chat…)
+- Beautiful React + Tailwind UI
+- Reusable Layouts (Sidebar + Topbar + Settings Page)
+- Fully Scalable Structure
+- Auto-loaded backend routes
+- Built-in Settings Panel (Account / Appearance / Developer)
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ### **Backend**
 ```
@@ -48,7 +48,7 @@ pages/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Clone:
 ```sh
@@ -64,7 +64,7 @@ cd frontend && npm install
 
 ---
 
-## ▶️ Running Development Servers
+## Running Development Servers
 
 ### Backend:
 
@@ -83,7 +83,7 @@ Frontend runs on: `http://localhost:5173`
 
 ---
 
-## 📦 Adding Plugins
+## Adding Plugins
 
 Each plugin goes in:
 
@@ -103,18 +103,18 @@ The system auto-loads plugin routes and components.
 
 ---
 
-## 🧑‍💻 Developer Info
+## Developer Info
 
 See **DeveloperInfo.md** for more deep documentation.
 
 ---
 
-## 📄 License
+## License
 
 MIT License — free for personal & commercial use.
 
 ---
 
-## ❤️ Made by Abdullah Khaver
+## Made by Abdullah Khaver
 
 DashForge will power multiple IT-Khaver products with clean modular architecture.

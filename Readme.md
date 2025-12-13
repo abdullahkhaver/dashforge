@@ -1,10 +1,10 @@
-# 👨‍💻 Developer Info – DashForge (MERN Modular Dashboard)
+#  Developer Info – DashForge (MERN Modular Dashboard)
 
 DashForge is a modular, plugin-based MERN dashboard starter designed for companies, products, and reusable admin systems.
 
 ---
 
-## 🔥 Tech Stack
+##  Tech Stack
 
 ### **Backend**
 - Node.js
@@ -20,7 +20,7 @@ DashForge is a modular, plugin-based MERN dashboard starter designed for compani
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ### **Backend (src/)**
 ```
@@ -44,7 +44,7 @@ pages/      → Dashboard pages, settings, profile
 
 ---
 
-## 🎯 Project Goals
+## Project Goals
 
 - Create a reusable dashboard for multiple products
 - Add or remove plugins without modifying core code
@@ -53,14 +53,14 @@ pages/      → Dashboard pages, settings, profile
 
 ---
 
-## 🧑‍💻 Developer Notes
+## Developer Notes
 
 - Use `modules` for fixed core features (auth, settings)
 - Use `plugins` for optional/add-on functionality (blog, shop, chat)
 
 ---
 
-## ⚠️ Requirements
+## Requirements
 
 - Node 20+
 - MongoDB 6+

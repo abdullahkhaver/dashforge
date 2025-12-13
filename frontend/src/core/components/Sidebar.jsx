@@ -6,10 +6,10 @@ export default function Sidebar() {
   const [isHovered, setIsHovered] = useState(false);
 
   const navItems = [
-    { path: '/', label: 'Dashboard', icon: '📊' },
-    { path: '/blog', label: 'Blog', icon: '📝' },
-    { path: '/notes', label: 'Notes', icon: '📒' },
-    { path: '/products', label: 'Products', icon: '🛍️' },
+    { path: '/', label: 'Dashboard', icon: '' },
+    { path: '/blog', label: 'Blog', icon: '' },
+    { path: '/notes', label: 'Notes', icon: '' },
+    { path: '/products', label: 'Products', icon: '' },
   ];
 
   return (
@@ -34,8 +34,6 @@ export default function Sidebar() {
             DashForge
           </h1>
         </div>
-        <div className="w-16 h-1 bg-linear-to-r from-blue-600 to-purple-600 rounded-full mt-2 transform origin-left transition-transform duration-500"
-             style={{ transform: isHovered ? 'scaleX(2.5)' : 'scaleX(1)' }}></div>
       </div>
 
       {/* Navigation */}
@@ -70,7 +68,7 @@ export default function Sidebar() {
       <div className="absolute bottom-6 left-6 right-6">
         <div className="p-3 bg-gray-700/30 rounded-xl border border-gray-600/30 backdrop-blur-sm">
           <p className="text-xs text-gray-400 text-center">
-            v1.0.0 • Modern Dashboard
+            v1.0.0 • Dash Forge
           </p>
         </div>
       </div>

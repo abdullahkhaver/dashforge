@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url';
 
 const router = express.Router();
 
-// ES modules require this to get __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -15,7 +14,7 @@ fs.readdirSync(modulesPath).forEach(async (folder) => {
   const routeFile = path.join(modulesPath, folder, `${folder}.routes.js`);
 
   if (fs.existsSync(routeFile)) {
-    const moduleRouter = await import(routeFile); // <-- ES module dynamic import
+    const moduleRouter = await import(routeFile);
 
     router.use(`/${folder}`, moduleRouter.default);
     console.log(`[Module Loaded]: ${folder}`);

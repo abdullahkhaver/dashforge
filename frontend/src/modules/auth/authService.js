@@ -1,10 +1,12 @@
 import axios from 'axios';
-
+import {BASE_URL} from "../../utils/api.js";
 // Base API for auth
+// const API = axios.create({
+//   baseURL: 'http://localhost:5000/api/auth',
+// });
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api/auth',
+  baseURL: `${BASE_URL}/api/auth`,
 });
-
 export const authService = {
   login: async (username, password) => {
     const res = await API.post('/login', { username, password });

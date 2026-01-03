@@ -25,11 +25,11 @@
     /* Monorepo / Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@dashboard/cli": ["packages/cli/src"],
-      "@dashboard/core-backend": ["packages/core-backend/src"],
-      "@dashboard/core-frontend": ["packages/core-frontend/src"],
+      // "@dashboard/cli": ["packages/cli/src"],
+      // "@dashboard/core-backend": ["packages/core-backend/src"],
+      // "@dashboard/core-frontend": ["packages/core-frontend/src"],
       "@dashboard/shared": ["packages/shared/src"],
-      "@dashboard/plugins/*": ["packages/plugins/*/src"]
+      // "@dashboard/plugins/*": ["packages/plugins/*/src"]
     },
 
     /* Performance & Safety */

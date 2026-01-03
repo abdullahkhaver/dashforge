@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* Language & Environment */
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+
+    /* Output */
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    /* Strictness */
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Interop & Compatibility */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    /* Monorepo / Path Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@dashboard/cli": ["packages/cli/src"],
+      "@dashboard/core-backend": ["packages/core-backend/src"],
+      "@dashboard/core-frontend": ["packages/core-frontend/src"],
+      "@dashboard/shared": ["packages/shared/src"],
+      "@dashboard/plugins/*": ["packages/plugins/*/src"]
+    },
+
+    /* Performance & Safety */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Build System Friendly */
+    "incremental": true
+  }
+}

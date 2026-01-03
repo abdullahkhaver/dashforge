@@ -1,0 +1,7 @@
+{
+  "name": "@dashboard/plugin-blog",
+  "peerDependencies": {
+    "@dashboard/core-backend": "*",
+    "@dashboard/core-frontend": "*"
+  }
+}

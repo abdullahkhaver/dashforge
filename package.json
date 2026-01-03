@@ -1,0 +1,17 @@
+{
+  "name": "dashboard-lib",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "packages/plugins/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.7.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,5 +1,4 @@
 # Dashboard Library Full-Stack Modular Framework (MERN + TypeScript)
-
 ## Table of Contents
 
 1. Overview
